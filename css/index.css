@@ -1,0 +1,12 @@
+.bg-color-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font: 1.5em impact; 
+}
+
+body {
+    background-color: rgb(255, 193, 0);
+}
+

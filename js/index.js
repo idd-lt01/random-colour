@@ -22,11 +22,14 @@ Let's start with one of the macro steps...
 //   5. Put them in the console to ensure they're not the same, refresh repeatedly
 //   6. Format the number into a string and test in the console: rgb(#, #, #)
 
-let colourRed =   Math.floor(Math.random() * 256);
-let colourGreen = Math.floor(Math.random() * 256);
-let colourBlue =  Math.floor(Math.random() * 256);
+document.getElementById('backgroundBtn').addEventListener("click", function(){
+    let colourRed = Math.floor(Math.random() * 256);
+    let colourGreen = Math.floor(Math.random() * 256);
+    let colourBlue =  Math.floor(Math.random() * 256);
 
-console.log(`rgb(${colourRed}, ${colourGreen}, ${colourBlue})`);
+    document.body.style.backgroundColor = `rgb(${colourRed}, ${colourGreen}, ${colourBlue})`;
+  })
+  ;
 
 /*  Breakdown of the random number code (the right side of = assignment):
 - Math.random()
